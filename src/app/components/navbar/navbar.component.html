@@ -1,0 +1,54 @@
+<div class="app-navbar">
+    <h2 class="logo">Admin Panel</h2>
+    <ul>
+      <li>
+        <a [routerLink]="'/'" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"> 
+          <span class="icon">🏠</span>
+          <span class="text">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="'/users'" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="icon">👥</span>
+          <span class="text">Users</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="'/products'" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="icon">📦</span>
+          <span class="text">Products</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="'/cart'" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="icon">🛒</span>
+          <span class="text">Cart</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="'/payment'" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="icon">💳</span>
+          <span class="text">Payment</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="'/reviews'" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="icon">⭐</span>
+          <span class="text">Reviews</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="'/promo-codes'" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="icon">🎟️</span>
+          <span class="text">Promo Codes</span>
+        </a>
+      </li>
+      <li>
+        <button class="logout-btn" (click)="logout()">
+          <span class="icon">🚪</span>
+          <span class="text">Logout</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  
